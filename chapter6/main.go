@@ -23,13 +23,13 @@ func main() {
 
 	// another way to achieve the same
 	total = 0.0
-	for _, value := range y { 
+	for _, value := range y {
 		total += value
 	}
 	fmt.Println(total / float64(len(y)))
 
-	var another_array = [3]float64{1,2,3}
-	another_one := [3]float64{5,6,7}
+	var another_array = [3]float64{1, 2, 3}
+	another_one := [3]float64{5, 6, 7}
 	// another_one =another_array
 	fmt.Println(another_array[2], another_one[2])
 
@@ -38,7 +38,7 @@ func main() {
 }
 
 func slices() {
-	var some_slice  = []float64{1,2,3}
+	var some_slice = []float64{1, 2, 3}
 	// x := make([]float64, 5, 10)
 	another_slice := append(some_slice, 4, 5)
 	fmt.Println(some_slice)
@@ -68,8 +68,8 @@ func maps() {
 	fmt.Println(len(int_array))
 	fmt.Println("int_array[1]=", int_array[1])
 	value, ok := int_array[1] // second return value is false (ok==false)
-	//Accessing an element of a map can return two values instead of just one. 
-	//The first value is the result of the lookup, the second tells us whether or not the lookup was successful. 
+	//Accessing an element of a map can return two values instead of just one.
+	//The first value is the result of the lookup, the second tells us whether or not the lookup was successful.
 	fmt.Println(value, ok)
 
 	// Go way of doing it
@@ -83,12 +83,12 @@ func maps() {
 	// maps strings to maps of string->string
 	elements := map[string]map[string]string{
 		"H": map[string]string{
-			"name": "Hydrogen",
+			"name":  "Hydrogen",
 			"state": "Gas",
 		},
 
 		"He": map[string]string{
-			"name": "Helium",
+			"name":  "Helium",
 			"state": "gas",
 		},
 	}
@@ -104,19 +104,18 @@ func maps() {
 
 func find_smallest() {
 	x := []int{
-  48,96,86,68,
-  57,82,63,70,
-  37,34,83,27,
-  19,97, 9,17,
-  }
+		48, 96, 86, 68,
+		57, 82, 63, 70,
+		37, 34, 83, 27,
+		19, 97, 9, 17,
+	}
 
-  min_el := x[0]
-  for _, el := range x {
-  	if el < min_el {
-  		min_el = el
-  	}
-  	// fmt.Println(el)
-  }
-  fmt.Println("Smallest number is, ", min_el)
+	min_el := x[0]
+	for _, el := range x {
+		if el < min_el {
+			min_el = el
+		}
+		// fmt.Println(el)
+	}
+	fmt.Println("Smallest number is, ", min_el)
 }
-

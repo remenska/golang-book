@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 import "math"
 
@@ -9,6 +10,7 @@ var (
 	c = 15
 	d = "sosgdgha"
 )
+
 func main() {
 	var x string = "Hello World"
 	fmt.Println(x)
@@ -26,7 +28,7 @@ func main() {
 
 	xx := "Hello World"
 	fmt.Println(xx)
-	// zz := 5 
+	// zz := 5
 	// fmt.Println(zz)
 	fmt.Println(something_outside)
 	f()
